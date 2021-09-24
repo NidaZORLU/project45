@@ -1,33 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-
-//Mixins
-@mixin transitionEffect($par){
-  transition: $par all;
-  -webkit-transition: $par all;
-  -moz-transition: $par all;
-  -o-transition: $par all;
-}
-@mixin centerFlex{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-//color
-$bg-color-1 :transparent;
-$bg-color-2: rgb(34, 31, 31);
-$bg-color-3: rgb(229, 9, 20);
-$bg-color-4:#fff;
-
-
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 * {
   box-sizing: border-box;
 }
+
 body {
-  font-family: 'Muli', sans-serif;
+  font-family: "Muli", sans-serif;
   flex-direction: column;
   height: 100vh;
-  @include centerFlex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .text {
@@ -40,7 +22,7 @@ body {
 
 .nav-btn {
   border: none;
-  background-color: $bg-color-1;
+  background-color: transparent;
   cursor: pointer;
   font-size: 20px;
 }
@@ -65,7 +47,7 @@ body {
 }
 
 .nav-black {
-  background-color: $bg-color-2;
+  background-color: #221f1f;
   width: 60%;
   max-width: 480px;
   min-width: 320px;
@@ -77,7 +59,7 @@ body {
 }
 
 .nav-red {
-  background-color: $bg-color-3;
+  background-color: #e50914;
   width: 95%;
   transition-delay: 0.2s;
 }
@@ -87,7 +69,7 @@ body {
 }
 
 .nav-white {
-  background-color: $bg-color-4;
+  background-color: #fff;
   width: 95%;
   padding: 40px;
   position: relative;
@@ -115,7 +97,7 @@ body {
 }
 
 .list li a {
-  color: rgb(34, 31, 31);
+  color: #221f1f;
   font-size: 14px;
   text-decoration: none;
   text-transform: uppercase;
